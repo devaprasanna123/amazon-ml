@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "val_fraction": 0.15,
+  "total_s1": 2206821,
+  "train_s1_count": 1875797,
+  "val_s1_count": 331024,
+  "source_population": "train_ground_truth.tsv",
+  "generation_method": "Stratified random shuffle by match-cardinality buckets (0, 1, 2-3, 4+)",
+  "split_file_sha256": "1ab0e445143fadd4a9e5b116e289f2421e5f56c8d2537c19d365ebe1a4396434",
+  "split_file_bytes": 46098128,
+  "deterministic_5k_sample_count": 5000,
+  "leakage_overlap_count": 0,
+  "created_at": "2026-09-25T21:55:00"
+}

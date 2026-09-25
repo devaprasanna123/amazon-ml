@@ -35,6 +35,12 @@ from pathlib import Path
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_DIR))
 
+# Ensure UTF-8 stdout across all operating systems
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
+
 import duckdb
 import lightgbm as lgb
 import numpy as np
@@ -176,7 +182,205 @@ def extract_features_16(r1, r2, r2_eid):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 3. Validation Core Runner
+# 3. Deterministic Validation Split Manager & Generator
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _cardinality_bucket(n_matches: int) -> str:
+    if n_matches == 0:
+        return "0"
+    elif n_matches == 1:
+        return "1"
+    elif n_matches <= 3:
+        return "2-3"
+    else:
+        return "4+"
+
+
+def get_or_generate_validation_split(
+    split_json: Path,
+    train_gt_path: Path,
+    reports_dir: Path,
+    val_fraction: float = 0.15,
+    seed: int = 42,
+) -> dict:
+    """
+    Loads existing validation_split_ids.json, or deterministically regenerates it
+    if absent (e.g. in fresh Colab clones) using the original stratified methodology.
+    """
+    if split_json.exists():
+        print(f"  Found existing validation split: {split_json.name}", flush=True)
+        with open(split_json, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    print(f"  [Notice] {split_json.name} not found. Deterministically regenerating from {train_gt_path.name}...", flush=True)
+    t0 = time.time()
+    if not train_gt_path.exists():
+        raise FileNotFoundError(f"Cannot regenerate split: ground truth file not found at {train_gt_path}")
+
+    # Fast line-by-line reading of ground truth
+    gt = {}
+    with open(train_gt_path, "r", encoding="utf-8") as f:
+        next(f, None)  # skip header
+        for line in f:
+            line = line.rstrip("\r\n")
+            if not line:
+                continue
+            parts = line.split("\t")
+            s1 = parts[0]
+            raw = parts[1].strip() if len(parts) > 1 else ""
+            if raw and raw.lower() not in ("nan", "none"):
+                matches = [m.strip() for m in raw.split(",") if m.strip()]
+            else:
+                matches = []
+            gt[s1] = matches
+
+    import random
+    rng = random.Random(seed)
+    buckets = defaultdict(list)
+    for s1_id, matches in gt.items():
+        b = _cardinality_bucket(len(matches))
+        buckets[b].append(s1_id)
+
+    val_ids = set()
+    for b, ids in buckets.items():
+        ids_shuffled = ids[:]
+        rng.shuffle(ids_shuffled)
+        n_val = max(1, round(len(ids_shuffled) * val_fraction))
+        val_ids.update(ids_shuffled[:n_val])
+
+    train_ids = sorted([k for k in gt.keys() if k not in val_ids])
+    val_ids_sorted = sorted(list(val_ids))
+
+    # Assert leakage-safe
+    assert not (set(train_ids) & set(val_ids_sorted)), "LEAK: overlap between train and val sets!"
+
+    split_data = {
+        "train_s1_ids": train_ids,
+        "val_s1_ids": val_ids_sorted,
+    }
+
+    # Save to reports/validation_split_ids.json
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    with open(split_json, "w", encoding="utf-8") as f:
+        json.dump(split_data, f, indent=2)
+
+    elapsed = time.time() - t0
+    file_bytes = split_json.stat().st_size
+    import hashlib
+    sha256 = hashlib.sha256(split_json.read_bytes()).hexdigest()
+    print(f"  Regenerated in {elapsed:.1f}s ({len(train_ids):,} train S1, {len(val_ids_sorted):,} val S1).", flush=True)
+    print(f"  Saved {split_json.name} ({file_bytes / (1024*1024):.1f} MB, SHA256: {sha256})", flush=True)
+
+    # Record manifest metadata
+    manifest_path = reports_dir / "validation_split_manifest.json"
+    manifest = {
+        "seed": seed,
+        "val_fraction": val_fraction,
+        "total_s1": len(gt),
+        "train_s1_count": len(train_ids),
+        "val_s1_count": len(val_ids_sorted),
+        "source_population": train_gt_path.name,
+        "generation_method": "Stratified random shuffle by match-cardinality buckets (0, 1, 2-3, 4+)",
+        "split_file_sha256": sha256,
+        "split_file_bytes": file_bytes,
+        "deterministic_5k_sample_count": 5000,
+        "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+    }
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2)
+    print(f"  Saved manifest: {manifest_path.name}", flush=True)
+
+    return split_data
+
+
+def test_split_reproducibility(dataset_train_dir: Path, reports_dir: Path):
+    """
+    Test and verify that split generation is 100% deterministic and leakage-free.
+    """
+    print("=" * 80)
+    print("TESTING VALIDATION SPLIT REPRODUCIBILITY")
+    print("=" * 80)
+    train_gt = dataset_train_dir / "train_ground_truth.tsv"
+    split_json = reports_dir / "validation_split_ids.json"
+
+    # Pass 1: generate / load
+    print("\n[Pass 1] Loading or generating split...")
+    split_1 = get_or_generate_validation_split(split_json, train_gt, reports_dir)
+
+    rng1 = np.random.RandomState(42)
+    sample_1 = sorted(list(rng1.choice(split_1["val_s1_ids"], size=5000, replace=False)))
+
+    # Pass 2: generate in-memory from scratch and compare
+    print("\n[Pass 2] Independent in-memory regeneration for determinism audit...")
+    gt = {}
+    with open(train_gt, "r", encoding="utf-8") as f:
+        next(f, None)
+        for line in f:
+            line = line.rstrip("\r\n")
+            if not line:
+                continue
+            parts = line.split("\t")
+            s1 = parts[0]
+            raw = parts[1].strip() if len(parts) > 1 else ""
+            if raw and raw.lower() not in ("nan", "none"):
+                matches = [m.strip() for m in raw.split(",") if m.strip()]
+            else:
+                matches = []
+            gt[s1] = matches
+
+    import random
+    rng = random.Random(42)
+    buckets = defaultdict(list)
+    for s1_id, matches in gt.items():
+        b = _cardinality_bucket(len(matches))
+        buckets[b].append(s1_id)
+
+    val_ids = set()
+    for b, ids in buckets.items():
+        ids_shuffled = ids[:]
+        rng.shuffle(ids_shuffled)
+        n_val = max(1, round(len(ids_shuffled) * 0.15))
+        val_ids.update(ids_shuffled[:n_val])
+
+    train_2 = sorted([k for k in gt.keys() if k not in val_ids])
+    val_2 = sorted(list(val_ids))
+
+    rng2 = np.random.RandomState(42)
+    sample_2 = sorted(list(rng2.choice(val_2, size=5000, replace=False)))
+
+    import hashlib
+    sha256_file = hashlib.sha256(split_json.read_bytes()).hexdigest()
+
+    # Integrity assertions
+    train_match = (split_1["train_s1_ids"] == train_2)
+    val_match = (split_1["val_s1_ids"] == val_2)
+    sample_match = (sample_1 == sample_2)
+    overlap_1 = len(set(split_1["train_s1_ids"]) & set(split_1["val_s1_ids"]))
+    overlap_2 = len(set(train_2) & set(val_2))
+
+    print("\n" + "-" * 80)
+    print("REPRODUCIBILITY AUDIT RESULTS:")
+    print(f"  Total S1 Population:         {len(gt):,}")
+    print(f"  Train S1 Count:              {len(train_2):,}")
+    print(f"  Val S1 Count:                {len(val_2):,}")
+    print(f"  Train/Val Leakage Overlap:   {overlap_1} (Pass 1), {overlap_2} (Pass 2)")
+    print(f"  Train IDs Exact Match:       {train_match}")
+    print(f"  Val IDs Exact Match:         {val_match}")
+    print(f"  5,000 S1 Sample Exact Match: {sample_match}")
+    print(f"  File Size:                   {split_json.stat().st_size:,} bytes ({split_json.stat().st_size / (1024*1024):.2f} MB)")
+    print(f"  Split File SHA256:           {sha256_file}")
+    print("-" * 80)
+
+    if train_match and val_match and sample_match and overlap_1 == 0:
+        print("[PASSED] DETERMINISM VERIFICATION PASSED 100%. SPLIT IS REPRODUCIBLE.")
+    else:
+        print("[FAILED] DETERMINISM VERIFICATION FAILED.")
+        sys.exit(1)
+    print("=" * 80)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. Validation Core Runner
 # ─────────────────────────────────────────────────────────────────────────────
 
 def run_validation_experiment(
@@ -203,8 +407,7 @@ def run_validation_experiment(
 
     # 1. Deterministic 5,000 S1 validation sample
     print("\n[1/5] Loading 5,000 deterministic S1 validation split...")
-    with open(split_json, "r", encoding="utf-8") as f:
-        split_data = json.load(f)
+    split_data = get_or_generate_validation_split(split_json, train_gt, reports_dir)
     rng = np.random.RandomState(42)
     sample_5k_ids = sorted(list(rng.choice(split_data["val_s1_ids"], size=5000, replace=False)))
     sample_5k_set = set(sample_5k_ids)
@@ -453,8 +656,8 @@ def main():
     parser.add_argument("--checkpoints-dir", type=str, default=None)
     parser.add_argument("--models-dir", type=str, default=None)
     parser.add_argument("--duckdb-mem", type=str, default="4GB")
-    parser.add_argument("--duckdb-threads", type=int, default=4)
     parser.add_argument("--no-cache", action="store_true", help="Force re-generation of candidates")
+    parser.add_argument("--test-split-reproducibility", action="store_true", help="Run split generation and determinism audit only")
     args = parser.parse_args()
 
     # Path detection
@@ -482,6 +685,10 @@ def main():
         checkpoints = Path(args.checkpoints_dir)
     if args.models_dir:
         models = Path(args.models_dir)
+
+    if args.test_split_reproducibility:
+        test_split_reproducibility(dataset_train_dir=dataset_train, reports_dir=reports)
+        return
 
     model_path = models / "lgbm_model.txt"
 
