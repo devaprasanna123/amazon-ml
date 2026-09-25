@@ -1,0 +1,8 @@
+BLOCKING EXPERIMENTS SUMMARY
+============================
+Evaluated on 20,000 validation S1 entities.
+Target Pool: 502,157 records
+Candidate Recall: 0.7029
+Average Candidates per S1: 6.35
+Total Candidates Evaluated: 126,921
+Reduction Ratio: 0.999987

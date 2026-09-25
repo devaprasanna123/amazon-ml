@@ -1,0 +1,101 @@
+s1_id,fp_target_id,score,s1_name,target_name,s1_addr,target_addr,country,is_s1_singleton
+S1-100341993,S2-40297022,0.975,Piedmont Ofs,piedmont ofs corp,"1877 Shelton Road, Boonville, IN",in boonville 1884 shelton road,US,False
+S1-100838619,S3-216880363,0.9495,Precision Value Clean,precision value clean metro co,"4860 Taft Street, Beaumont, TX",4867 taft street beaumont texas,US,False
+S1-101014338,S3-681095154,0.7799,My Products Private Limited,pvt my products ltd,"Door No. 5-106 (93), Shop No. F24, First Floor Canara Trade Centre, Near Market, Moodbidri, Dakshina Kannada, Karnataka",agra onyx bharat corporate house agra shop no 5 first floor block no15 cloth market sa njay place up,India,False
+S1-101363800,S2-766636760,0.8803,City Media Private Limited,city media pvt ltd,"2888, First Floor, Sirkiwalan, Delhi, Central Delhi, Delhi",,India,False
+S1-101363800,S2-836850003,0.8803,City Media Private Limited,city media pvt ltd,"2888, First Floor, Sirkiwalan, Delhi, Central Delhi, Delhi",,India,False
+S1-101363800,S2-819355499,0.8803,City Media Private Limited,city media pvt ltd,"2888, First Floor, Sirkiwalan, Delhi, Central Delhi, Delhi",,India,False
+S1-101552998,S2-25414426,0.8015,Ek Online Private Limited,pvt ek online holdings ltd,"Flora Ixora, Wing-B, 802, Near Nirmal School, Opp. Swagat Hall, Ravapar Road, Canal Road, Morvi, Morbi, Morbi, Rajkot, Gujarat",ગુજરાત wing b 802 near nirmal school opposite swagat hall ravapar road canal road morvi morbi door no 74 flroa ixora morvi rajkot,India,False
+S1-101700216,S2-667731617,0.8803,Cure Hypnosis,cure hypnosis,"Morgantown, 472 Meridan Street, WV",,US,False
+S1-101825314,S2-432111326,0.8803,Digital Consultants Private Limited,digital consultants pvt ltd,"Fl. E-202, Park Xpress, Baner Balewadi Link Road, Pune City, Pune, Maharashtra",,India,False
+S1-101939444,S2-62454188,0.9888,"Patel, Jewel, DPM, P.C.",patel jewel dpm pc ltd,"Unit Unit D, ND, 1965 Sheyenne Street, West Fargo",1978 sheyenne street west fargo nd,US,False
+S1-102132206,S2-513409710,0.9912,International Consultants Private Limited,international consultants ltd,"8-2-293/82/L/1-B, Plot No.1-B, First Floor Mla Colony, Road No.12, Banjara Hills, Hyderabad, Telangana",house no 512 8 2 293 82 l 8 b plot no1 b first floor mla colony road no12 banjara hills తెలంగాణ,India,False
+S1-102132206,S2-416216314,0.8803,International Consultants Private Limited,international consultants pvt ltd,"8-2-293/82/L/1-B, Plot No.1-B, First Floor Mla Colony, Road No.12, Banjara Hills, Hyderabad, Telangana",,India,False
+S1-102132206,S3-157183231,0.8045,International Consultants Private Limited,international consultants pvt ltd,"8-2-293/82/L/1-B, Plot No.1-B, First Floor Mla Colony, Road No.12, Banjara Hills, Hyderabad, Telangana",a 508 pardi gj,India,False
+S1-102420475,S3-444336715,0.9368,Lesley Stefan Silver Pimco,lesley stefan silver pimco corp,"18 Horse Hill Road, Brookville, NY",29c horse hill road brookville new york,US,False
+S1-1026212,S2-135882503,0.8803,Om Constructions Private Limited,om constructions pvt ltd,"Karnataka, Bangalore South, Bangalore, No 117, Bsk 3 Stage",,India,False
+S1-102699825,S2-275710720,0.9987,Nirmal Universal Private Limited,nirmal solutions pvt ltd,"No 887/62/6/1, Sri Venkateswara, 2Nd Floor Vivekananda Nagar, 2Nd Cross, Begur Road, Bommanahalli, Bangalore, Karnataka",karnataka 887 62 6 6 sri venkateswara 2nd floor vivekananda nagar 2nd cross beugr road bommanahalli,India,True
+S1-102699825,S2-388450445,0.9882,Nirmal Universal Private Limited,nirmal universal public ltd,"No 887/62/6/1, Sri Venkateswara, 2Nd Floor Vivekananda Nagar, 2Nd Cross, Begur Road, Bommanahalli, Bangalore, Karnataka",house no 887 62 6 6 sri venkateswara 2nd floor vivekananda nagar 2nd cross begur road bommanahalli karnataka,India,True
+S1-102850150,S3-912828291,0.8529,Real Investments Private Limited,real investments pvt ltd,"H No.- 149, Kedl Ballabh Bari Gumanpura B-Ii, Kota, Rajasthan",,India,False
+S1-102850150,S3-191886085,0.8529,Real Investments Private Limited,real investments pvt ltd,"H No.- 149, Kedl Ballabh Bari Gumanpura B-Ii, Kota, Rajasthan",,India,False
+S1-103247790,S3-879352869,0.8529,Reliable Harbor Futurecrest Inc,reliable harbor futurecrest inc,"303 Butterfield Road, Elmhurst, IL",,US,False
+S1-103247790,S3-442028716,0.8529,Reliable Harbor Futurecrest Inc,reliable harbor futurecrest inc,"303 Butterfield Road, Elmhurst, IL",,US,False
+S1-103435388,S2-646453097,0.8803,Physical Therapy Group,physical therapy group,"Unit C, LA, Houma, 736 Bayou Gardens Boulevard",,US,False
+S1-103435388,S2-215440140,0.8803,Physical Therapy Group,physical therapy group,"Unit C, LA, Houma, 736 Bayou Gardens Boulevard",,US,False
+S1-103435388,S2-755143709,0.8803,Physical Therapy Group,physical therapy group,"Unit C, LA, Houma, 736 Bayou Gardens Boulevard",,US,False
+S1-103776732,S2-81967551,0.9246,Tracie Posner Platinum Hub,tracie posner platinum hub corp,"Huber Heights, OH, Unit 3B, 2003 Persimmon Way",200 persimmon way tipp city oh,US,False
+S1-103864343,S3-104483579,0.8529,Sree Investment Private Limited,sree investment pvt ltd,"33, Vaibhav Bunglows-2, Near Sun-N-Step Club, Ghatlodiya, Ahmadabad City, Ahmedabad, Gujarat",,India,False
+S1-104763614,S2-520398536,0.8803,Federal Network,federal network,"3425 Kings Road, Unit 308, Steger, IL",,US,False
+S1-104763614,S3-842123379,0.8529,Federal Network,federal network,"3425 Kings Road, Unit 308, Steger, IL",,US,False
+S1-105063663,S3-316688563,0.8529,Fortune Technologies Private Limited,fortune technologies pvt ltd,"No. 91/4, 102/3, Veeranna Palya, Nagawara Ring Rroad, Opp To Bel Corporat, Ion Office, Bangalore, Karnataka",,India,False
+S1-105512388,S2-889768466,0.9767,Chiranjeevi Management (India) Private Limited,chiranjeevi camp india pvt ltd,"Plot No. 2635-36, Iv Phasegidc Wadhavaan Dist. Surendranagar, Surendranagar, Gujarat",no 2635 47 iv phasegidc wadhavaan dist surendranagar null gujarat,India,False
+S1-105591050,S3-621263023,0.7202,Sky Management Private Limited,sky management pvt,"53, B.L Mukherjee Road Nimta, Kolkata, Kolkata, Howrah, West Bengal",,India,False
+S1-106171762,S2-754248720,0.9869,Global Atlanticus,global atlanticus inc,"Cincinnati, OH, 9627 Timbermill Court",oh cincinnati 9638 timbermill court,US,False
+S1-10648369,S3-1209357,0.9861,"Fink, Emalia, L.C.S.W.",fink emalia l c s w inc,"1612 Cavalier Court, Wheaton, IL",1617 cavalier court wheaton illinois,US,False
+S1-107095323,S3-677706252,0.9532,Heartland Global Axiom,heartland global co axiom,"Maple Valley, WA, 28106 241st Avenue",28115 241st avenue maple valley washington,US,False
+S1-107988172,S2-494822735,0.8803,Dermatology Star Associates LLC,dermatology star associates llc,"5366 Lynnwood Court, Lavalette, WV",,US,False
+S1-108027841,S2-414560289,0.958,LZN Technologies Private Limited,lzn technologies public ltd,"Samod House, Gangapole, Jaipur, Rajasthan",b3 3 samod house gangapole jaipur rajasthan,India,False
+S1-108027841,S3-320571399,0.8469,LZN Technologies Private Limited,xylocalo dba aarini infracon llp,"Samod House, Gangapole, Jaipur, Rajasthan",samod house gangapole jaipur rajasthan,India,False
+S1-108027841,S3-827945912,0.9515,LZN Technologies Private Limited,quopyra dba sai classic infrastructure pvt ltd,"Samod House, Gangapole, Jaipur, Rajasthan",samod house gangapole jaipur rajasthan,India,False
+S1-108027841,S2-321093021,0.9522,LZN Technologies Private Limited,anm s0ftware pvt ltd,"Samod House, Gangapole, Jaipur, Rajasthan",samod house gangapole jaipur rajasthan,India,False
+S1-108366221,S2-229856886,0.8803,Fetech Inc,fetech inc,"1203 Creek Road, Unit Lot 22, Greenfield, NY",,US,True
+S1-108366221,S3-12844487,0.8529,Fetech Inc,fetech inc,"1203 Creek Road, Unit Lot 22, Greenfield, NY",,US,True
+S1-108366221,S3-983731160,0.8529,Fetech Inc,fetech inc,"1203 Creek Road, Unit Lot 22, Greenfield, NY",,US,True
+S1-10880399,S2-855820882,0.9048,Turner Holding Company,turner holding co westgate,"112 Lower Terrace Drive, NM, Ruidoso",117 lower terrace drive ruidoso nm,US,False
+S1-109647525,S2-601985428,0.9059,Dynamic Care Private Limited,dynamic care ltd pvt,"C/O Mohinder Singh Shop No. 6 Opp. Ganga Dharmkanta, Haryana, Sirsa, Dabwali Ellanabad",,India,False
+S1-110018730,S3-604218112,0.9731,General International School,general international school industries,"Saji Vilas, Knra -30, Kalpaka Nagar, Aluva, Ernakulam, Kerala",no 75 saji vilas knra 30 kalpaka nagar aluva ernakulam kl,India,False
+S1-110147126,S3-687587789,0.9419,Highland Companies Co,arckelo,"607 Odell Road, Spring Lake, NC",607 odell road spring lake nc,US,False
+S1-110497630,S2-484947051,0.788,Superior Analytics Holdings,superior analytics holdings greater,"123 Griffith Street, Rochester, NY",136 griffith street rochester ny,US,False
+S1-110801640,S3-614789570,0.964,Strategic Nutrition Partners LLC,strategic nutrition partners partners llc,"6601 Thackwell Way, Unit STE M, Fairfax County, VA",610 thackwell way suite m alexandria virginia,US,True
+S1-110902671,S3-272590870,0.9831,Rapid Learning Worldwide LLC,rapid learning w0rldwide co,"404 Belleview Street, Amarillo, TX",408c belleview street amarillo texas,US,True
+S1-111116285,S3-285963063,0.9106,Center Consultancy,center consultancy exports,"Ahmedabad, 6Th Floor, Titanium, Corporate Road, Prahladnagar, Gujarat, 62, Ahmadabad City",69 ahmadabad city ahmedabad gj,India,False
+S1-111273148,S2-859521769,0.9953,Johannah Dennis Etf,johannah dennis etf co,"2 7 Avenue, Sartell, MN",5 9 7 avenue sartell mn,US,False
+S1-111416709,S3-922280163,0.7775,Lotus Global,lotus global pvt,"Narsinghpur, Gurgaon, Sck 113, Haryana, The Skycourt, Garden City, Sector 86",,India,False
+S1-111855355,S3-935723399,0.9672,Eye Value Care,eye value care westgate co,"Garland, TX, 234 Katy Street",236 katy street texas garland cdp,US,False
+S1-111899955,S3-357494732,0.953,Super Internet Private Limited,super pvt ltd center,"Flt 401 Aliabad Apartment, Behram Baug Sultana Bad Near 24 Karat Multiplex Jogeshwari West, Mumbai, Mumbai City, Maharashtra",mh mumbai shop no 401,India,False
+S1-112017808,S3-362894576,0.8529,Metro Committee,metro committee,"N4575 Cotton Wood Drive, Town Of Medary, WI",,US,False
+S1-112603638,S3-468633389,0.8875,1170 Park Way Owners Corp Co,1170 park way owners corp,"33 Old House Street, Lynco, WV",,US,False
+S1-112603638,S2-943001634,0.9709,1170 Park Way Owners Corp Co,1170 park way oanmes corp corp,"33 Old House Street, Lynco, WV",38 old house street lynco wv,US,False
+S1-112854360,S3-962838142,0.8366,3410 Main Boulevard Management LLC,3410 main boulevard management greater llc,"1000 Grosser Road, Unit Unit H, Douglass Township, PA",unit unit h pennsylvania gilbertsville 1021 grosser road,US,False
+S1-113225027,S3-917177311,0.97,GU Viii,gu viii partners,"8308 Tintinhull Lane, Waxhaw, NC",8315 tintinhull lane waxhaw north carolina,US,False
+S1-11386092,S2-567091631,0.8803,Bombay Tech Private Limited,bombay tech pvt ltd,"Kh. No.1086, G.F, Saroop Vihar, Kadipur, Delhi, North West Delhi, Delhi",,India,False
+S1-114635312,S3-522159628,0.8529,Silver Agro Private Limited,silver agro pvt ltd,"Plot No. 238, Sastri Nagar Unit-4, Bhubaneswar, Khordha, Orissa",,India,False
+S1-114725809,S3-807590876,0.8529,Gold Builders Private Limited,gold builders pvt ltd,"H No 7/03, Maharashtra, Thane, Sr No26, Idgha Rd Nawayat Ngr, Thane",,India,False
+S1-114746435,S2-358288515,0.8801,Horizon Electronics Dynamics Inc.,horizon electronics dynamic central inc,"3827 37th Avenue, New Salem, ND",3836 37th avenue new saleem cdp nd,US,True
+S1-115248478,S3-245887585,0.9333,Gr Trades LLP,gr trades exports,"Gohankar Lane Near Railway Booking Office, Nashik, Maharashtra, Nashik, C/O Vikrant Chandwadkar 401",no 271 c o vikrant chandwadkar 403 gohankar lane near railway booking office nashik mh,India,False
+S1-115307211,S3-958519347,0.9899,Labhansh Professional Private Limited,labhansh merchandise,"Mumbai City, First Floor, Prospect Chambers, Annexe, 317-21, Dr. D. N. Road, Fort, Room No. 10/11, Maharashtra, Mumbai",room no 10 32 first floor prospect chambers annexe 317 21 drive d north road fort bombay mumbai city mh,India,False
+S1-115959807,S2-793182531,0.9933,Industrial Chemical Works Partners,inc industrial chemical works partners,"2833 Steamboat Springs Run, Village Of Howard, WI",284 steamboat springs run village of howard wi,US,False
+S1-116559766,S3-95034936,0.949,International Jagdhatri Restaurants Private Limited,international jagdhatri tools pvt,"No.5/67, Vellapillayarkoil, Vennnadur Post, Rasipuram, Namakkal, Tamil Nadu",no5 88 vellapillayarkoil vennnadur post rasipuram namakkal tn,India,False
+S1-116937368,S3-421994052,0.8712,Heather Acuna Australia Group,heather acuna australia group holdings,"1201 Cedar Hill Avenue, Dallas, TX",1214 cedar hill avenue dallas texas,US,False
+S1-117154955,S3-241442436,0.6689,Vision Consulting Private Limited,vision consulting pvt ltd,"Np-143, Pitampura, New Delhi, North West, Delhi",house no a new delhi dl,India,False
+S1-117154955,S3-470450753,0.84,Vision Consulting Private Limited,vision pvt consulting ltd,"Np-143, Pitampura, New Delhi, North West, Delhi",,India,False
+S1-117154955,S3-694567268,0.8656,Vision Consulting Private Limited,vision consulting ltd pvt,"Np-143, Pitampura, New Delhi, North West, Delhi",,India,False
+S1-117573282,S3-394648963,0.8616,Diversified Biomedical Dynamics LLC,diversified biomedical dynamics ltd,"City Of Middleton, WI, 2910 Laura Lane",2911 laura lane middleton wisconsin,US,False
+S1-117943308,S3-657499296,0.9854,Vital Brothers Center,vital brothers center infratech ltd,"2195 B-2Vasant Kunj, New Delhi, North Delhi, Delhi",2197 b 2vasant kunj north delhi new delhi dl,India,False
+S1-118092864,S2-336020351,0.9091,Kimmel Education LLC,kimmel education holdings,"Kansas City, 4914 Budd Park Esplanade, MO",4915 budd park esplanade kansas city mo,US,False
+S1-118619488,S3-54150822,0.8445,"Alaine Lopez, O.D., P.C.",alaine lopez o d pc uptown,"10927 E Avenue, Hesperia, CA",10934 east avenue hesperia california,US,False
+S1-119092986,S3-234379431,0.8529,Shyam Solutions Private Limited,shyam solutions pvt ltd,"No. 1764, 1St Cross, Vasantham Colony, Anna Nagar, Chennai, Tamil Nadu",,India,False
+S1-119092986,S3-308585105,0.8529,Shyam Solutions Private Limited,shyam solutions pvt ltd,"No. 1764, 1St Cross, Vasantham Colony, Anna Nagar, Chennai, Tamil Nadu",,India,False
+S1-119141558,S3-323092730,0.8458,Sree Charitable Trust,sree charitable trust co,"C-6, 7, 8 & 9, Site No. - 1, Industrial Area, Haripur Jalalabad, Lucknow-Faizabad Road, Faizabad, Uttar Pradesh",,India,False
+S1-119141558,S3-462437722,0.8458,Sree Charitable Trust,sree charitable trust co,"C-6, 7, 8 & 9, Site No. - 1, Industrial Area, Haripur Jalalabad, Lucknow-Faizabad Road, Faizabad, Uttar Pradesh",,India,False
+S1-119141558,S2-351602706,0.9982,Sree Charitable Trust,sree charitable trust industries co,"C-6, 7, 8 & 9, Site No. - 1, Industrial Area, Haripur Jalalabad, Lucknow-Faizabad Road, Faizabad, Uttar Pradesh",door no 187 c 17 7 8 9 site no 1 industrial area haripur jalalabad lucknow faizabad road uttar pradesh,India,False
+S1-119493548,S2-113587507,0.9931,Global Pooja Hudson Private Limited,global pooja farmer pvt ltd,"Govindanaickem Palayam, Komarayee Valasu, Modakurichi, Erode, Tamil Nadu",no 51 govindanaickem palayam komarayee valasu modakurichi erode tamil nadu,India,False
+S1-119728229,S2-811146307,0.8913,Eastern Trading Private Limited,eastern trading ltd pvt,"Gurgaon, D-1102, Gurugram, Wembley Estate, Rosewood City, Sector - 49, Haryana",,India,False
+S1-119728229,S2-418540634,0.8803,Eastern Trading Private Limited,eastern trading pvt ltd,"Gurgaon, D-1102, Gurugram, Wembley Estate, Rosewood City, Sector - 49, Haryana",,India,False
+S1-119728229,S3-876013234,0.8098,Eastern Trading Private Limited,eastern trading pvt ltd,"Gurgaon, D-1102, Gurugram, Wembley Estate, Rosewood City, Sector - 49, Haryana",28 bharuch gj,India,False
+S1-119728229,S2-444900570,0.8803,Eastern Trading Private Limited,eastern trading pvt ltd,"Gurgaon, D-1102, Gurugram, Wembley Estate, Rosewood City, Sector - 49, Haryana",,India,False
+S1-119752356,S2-12653648,0.8803,Crespo Corporation,crespo corp,"8955 Heights Drive, Sandy City, UT",,US,False
+S1-121151432,S3-529315945,0.9999,Cardiology Express Partners Care,ltd cardiology express partners care,"N51W34861 Wisconsin Avenue, Unit Unit 2110, Village Of Lac La Belle, WI",n51w34865 wisconsin avenue unit unit 2110 village of lac la belle wisconsin,US,False
+S1-121371623,S3-191199305,0.9735,Robb & Smith Global LLC,robb and smíth global ltd,"125 Glendover Drive, Elizabethtown, KY",129 glendover drive elizabethtown kentucky,US,False
+S1-121886594,S3-900116695,0.8529,Bombay Business Pvt Ltd,bombay business pvt ltd,"Mumbai City, Basement 14 Silver Beach Estate, A. B. Nair Road, Santacruz (W), Juhu, Mumbai, Maharashtra",,India,False
+S1-121886594,S3-180060113,0.8529,Bombay Business Pvt Ltd,bombay business pvt ltd,"Mumbai City, Basement 14 Silver Beach Estate, A. B. Nair Road, Santacruz (W), Juhu, Mumbai, Maharashtra",,India,False
+S1-122592013,S2-101748369,0.9154,Ivrcl Infotech (India) Private Limited,ivrcl infotech india holdings pvt,"At-Maulabagh Ara Ps-Ara Nawada, Ara, Bhojpur, Bihar",house no a 3 at maulabagh ara ps ara nawada ara null bihar,India,False
+S1-123363410,S3-794997382,0.8529,Shivam Solutions Private Limited,shivam solutions pvt ltd,"C-362, Prodyogiki Plot-11, Sector-3, Dwarka, New Delhi, Delhi",,India,False
+S1-123546782,S3-401759198,0.827,Jain Consultants Private Limited,jain consultants pvt ltd,"A.P. Heights, Behind Gopal Cultural Hall Osmanpura, Aurangabad, Maharashtra",2639 sangli महाराष्ट्र,India,False
+S1-123820275,S2-814238855,0.8349,Hari Media Private Limited,hari media public ltd,"Plot No G-37-B, Ground Floor Raj Nagar Ii Palam Colony, New Delhi, Delhi",plot no g 5 8 b ground floor raj nagar ii palam colony new delhi delhi,India,False
+S1-123921786,S2-809578257,0.8803,Environmental Council,environmental council,"47520 Gallatin Road, Unit UNIT 2D, Gallatin Gateway, MT",,US,False
+S1-124263855,S3-255908167,0.9818,Dental Blue Associates,dental blue associates llc,"Chaska, 423 Ash Street, MN",434 ash street po box 8707 chaska minnesota,US,False
+S1-124728281,S2-218614378,0.9058,Gonzalez Medical Center P.C.,gonzalez medical center,"92 Lost Lake Drive, Patterson, NY",,US,False
+S1-124728281,S3-199404453,0.8419,Gonzalez Medical Center P.C.,gonzalez medical center ltd,"92 Lost Lake Drive, Patterson, NY",94 lost lake drive patterson new york,US,False
+S1-124785632,S3-214791320,0.9951,Innovative Diagnostic Systems,innovative diagnostic systéms co,"318 4350, Ogden, UT",321 4350 ogden utah,US,True
+S1-12485976,S2-457228747,0.9864,Blue Seafood of Warrenton Town,blue seafood of warrenton town co,"99 Leeds Court, Unit UNIT C, Warrenton Town, VA",103 leeds court wrarenton cdp va,US,False

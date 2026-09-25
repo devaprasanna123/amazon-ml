@@ -1,0 +1,7 @@
+strategy,description,links_recovered,recall,marginal_links_over_previous,marginal_recall_contribution
+V1_Exact_and_Ordered_Pair,Baseline ordered 2-token shingle + norm name + stem,9271,0.5333,9271,0.5333
+V2_Order_Invariant_Shingles,Sorted 2-token & 3-token shingles (budget 60),9118,0.5245,-153,-0.0088
+V3_Frequency_Aware_Subdivision,Subdivision for blocks >50 via addr numbers & 3rd tokens,9516,0.5474,398,0.0229
+V4_Smart_Quotas_No_Lossy_Truncation,Per-block quotas without premature early exit (cap 120),9957,0.5727,441,0.0254
+V5_International_Normalization,Unicode NFKD diacritic removal + French legal suffixes,9481,0.5454,-476,-0.0274
+V6_All_Combined_Ensemble,V2 + V3 + V4 + V5 combined candidate generation,10442,0.6006,961,0.0553

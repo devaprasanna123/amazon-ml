@@ -1,0 +1,57 @@
+# ==============================================================================
+# Amazon ML Challenge 2026 — .gitignore
+# ==============================================================================
+
+# Datasets and raw data directories
+dataset/
+data/
+*.tsv
+*.parquet
+
+# Generated multi-GB submission outputs
+output/
+
+# Large generated data split tables and pair diagnostic dumps in reports
+reports/train_ground_truth_split.csv
+reports/val_ground_truth.csv
+reports/validation_split_ids.json
+reports/leaderboard_gap/missing_links.csv
+reports/leaderboard_gap/v2_blocking_misses.csv
+reports/leaderboard_gap/v3_candidate_misses.csv
+
+# Runtime caches and checkpoints
+checkpoints/
+data/cache/
+*.pkl
+*.feather
+
+# Python bytecode & test caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter / Colab checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Credentials & secrets
+.env
+.env.*
+*.key
+*.pem
+*.secret
+credentials.json
+token.json
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,10 @@
+strategy,description,macro_f05,precision,recall,singleton_accuracy
+Pure Threshold (0.64),Base model with calibrated optimal threshold,0.846643,0.985538,0.707888,0.981132
+"Score Gap (thr=0.64, delta=0.1)",Allow secondary matches only if within 0.1 of top candidate,0.843983,0.995161,0.68522,0.981132
+"Score Gap (thr=0.64, delta=0.15)",Allow secondary matches only if within 0.15 of top candidate,0.845953,0.992677,0.694395,0.981132
+"Score Gap (thr=0.64, delta=0.2)",Allow secondary matches only if within 0.2 of top candidate,0.846952,0.990321,0.700575,0.981132
+"Match Count Cap (max=4, thr=0.64)",Cap maximum matches per S1 to top 4,0.841241,0.987404,0.684569,0.981132
+"Match Count Cap (max=6, thr=0.64)",Cap maximum matches per S1 to top 6,0.84647,0.985772,0.706434,0.981132
+"Match Count Cap (max=8, thr=0.64)",Cap maximum matches per S1 to top 8,0.846666,0.985572,0.707861,0.981132
+High Singleton Confidence (gate=0.66),Require top candidate >= 0.66 to break singleton,0.846437,0.985538,0.70775,0.981132
+High Singleton Confidence (gate=0.69),Require top candidate >= 0.69 to break singleton,0.846386,0.985788,0.707621,0.983827

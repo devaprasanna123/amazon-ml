@@ -1,0 +1,104 @@
+======================================================================
+DATASET INVENTORY REPORT
+Generated: 2026-09-25T13:21:13
+======================================================================
+
+Dataset root: D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset
+
+-- FILES ---------------------------------------------------------------
+  train_source1
+    Path     : D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset\train\train_source1.tsv
+    Size     : 200.34 MB
+    Rows     : 2,206,821
+    Columns  : ['entity_id', 'business_name', 'business_address', 'country']
+    Missing  : none
+    Countries: ['India', 'US']
+    Unique IDs: 2,206,821  Dup IDs: 0
+    Name len : mean=24.03 std=7.74 min=3 max=105
+    Addr len : mean=52.07 std=25.33 min=11 max=256
+
+  train_source2
+    Path     : D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset\train\train_source2.tsv
+    Size     : 466.63 MB
+    Rows     : 5,034,616
+    Columns  : ['entity_id', 'business_name', 'business_address', 'country']
+    Missing  : {'business_address': 168967}
+    Countries: ['India', 'US']
+    Unique IDs: 5,034,616  Dup IDs: 0
+    Name len : mean=25.1 std=8.89 min=2 max=104
+    Addr len : mean=46.23 std=24.84 min=0 max=249
+
+  train_source3
+    Path     : D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset\train\train_source3.tsv
+    Size     : 480.37 MB
+    Rows     : 5,285,603
+    Columns  : ['entity_id', 'business_name', 'business_address', 'country']
+    Missing  : {'business_address': 175916}
+    Countries: ['India', 'US']
+    Unique IDs: 5,285,603  Dup IDs: 0
+    Name len : mean=25.2 std=9.49 min=2 max=123
+    Addr len : mean=46.71 std=21.65 min=0 max=240
+
+  test_source1
+    Path     : D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset\test\test_source1.tsv
+    Size     : 166.91 MB
+    Rows     : 1,732,544
+    Columns  : ['entity_id', 'business_name', 'business_address', 'country']
+    Missing  : none
+    Countries: ['France', 'India', 'US']
+    Unique IDs: 1,732,544  Dup IDs: 0
+    Name len : mean=23.84 std=7.67 min=3 max=92
+    Addr len : mean=57.21 std=25.03 min=11 max=268
+
+  test_source2
+    Path     : D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset\test\test_source2.tsv
+    Size     : 485.86 MB
+    Rows     : 4,887,273
+    Columns  : ['entity_id', 'business_name', 'business_address', 'country']
+    Missing  : {'business_address': 129408}
+    Countries: ['France', 'India', 'US']
+    Unique IDs: 4,887,273  Dup IDs: 0
+    Name len : mean=25.7 std=9.12 min=2 max=102
+    Addr len : mean=50.41 std=25.35 min=0 max=269
+
+  test_source3
+    Path     : D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset\test\test_source3.tsv
+    Size     : 482.56 MB
+    Rows     : 5,082,316
+    Columns  : ['entity_id', 'business_name', 'business_address', 'country']
+    Missing  : {'business_address': 136098}
+    Countries: ['France', 'India', 'US']
+    Unique IDs: 5,082,316  Dup IDs: 0
+    Name len : mean=25.66 std=9.57 min=2 max=103
+    Addr len : mean=48.74 std=22.64 min=0 max=267
+
+-- GROUND-TRUTH --------------------------------------------------------
+  File      : D:\AMAZON DATASET\6ab10eb3b23ba_student_resource\student_resource\dataset\train\train_ground_truth.tsv
+  Size      : 121.13 MB
+  Rows      : 2,206,821
+  Columns   : ['source1_entity_id', 'matched_entity_ids']
+
+  Match count distribution:
+    0 matches :  123,247  (5.58%)
+    1 matches :  119,157  (5.40%)
+    2 matches :  375,212  (17.00%)
+    3+ matches : 1,589,205  (72.01%)
+
+  Max matches for one S1  : 11
+  Singleton S1 count      : 123,247
+  Proportion singleton S1 : 0.0558 (5.58%)
+  Total positive links    : 7,638,365
+
+-- INTEGRITY CHECK -----------------------------------------------------
+  S1 IDs not in train_source1   : 0
+  S2 IDs not in train_source2   : 0
+  S3 IDs not in train_source3   : 0
+  S1 IDs appearing in matched   : 0
+  PASSED: True
+
+-- ALL DISTINCT COUNTRIES ----------------------------------------------
+  Train: ['France', 'India', 'US']
+  (Test may include France)
+
+Audit completed in 499.8s
+======================================================================

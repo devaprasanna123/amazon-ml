@@ -1,0 +1,7 @@
+source,total_rows,sample_analyzed,missing_name_rate,missing_address_rate,country_India_pct,country_US_pct,country_France_pct,mean_name_char_len,mean_name_token_count,mean_addr_char_len,mean_addr_token_count,name_non_ascii_rate,addr_non_ascii_rate,name_has_punct_rate,addr_has_digits_rate,norm_name_collision_rate
+Train_Source1,2206821,100000,0.0,0.0,39.95,60.05,0.0,24.08,3.55,52.03,8.03,0.0,0.00035,0.20889,0.96496,0.1137
+Test_Source1,1732544,100000,0.0,0.0,46.89,38.15,14.97,23.84,3.52,57.23,8.59,0.02349,0.04251,0.18442,0.95851,0.11199
+Train_Source2,5034616,100000,0.0,0.03194,39.84,60.16,0.0,25.09,3.49,46.19,7.28,0.15162,0.09529,0.3415,0.90664,0.02447
+Test_Source2,4887273,100000,0.0,0.02665,47.47,38.05,14.48,25.75,3.59,50.4,7.8,0.18983,0.14814,0.30817,0.92645,0.01962
+Train_Source3,5285603,100000,0.0,0.03429,40.03,59.97,0.0,25.16,3.52,46.62,7.16,0.11607,0.08951,0.35229,0.90747,0.02488
+Test_Source3,5082316,100000,0.0,0.02686,47.41,38.11,14.48,25.66,3.6,48.81,7.52,0.14583,0.14511,0.31286,0.92438,0.01859

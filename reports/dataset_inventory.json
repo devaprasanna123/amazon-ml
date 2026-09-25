@@ -1,0 +1,268 @@
+{
+  "dataset_root": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset",
+  "audit_timestamp": "2026-09-25T13:21:13",
+  "files": {
+    "train_source1": {
+      "file": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset\\train\\train_source1.tsv",
+      "size_mb": 200.34,
+      "row_count": 2206821,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "missing_values": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "distinct_countries": [
+        "India",
+        "US"
+      ],
+      "unique_id_count": 2206821,
+      "duplicate_id_count": 0,
+      "duplicate_ids_sample": [],
+      "name_length_stats": {
+        "count": 2206821,
+        "mean": 24.03,
+        "std": 7.74,
+        "min": 3,
+        "max": 105
+      },
+      "address_length_stats": {
+        "count": 2206821,
+        "mean": 52.07,
+        "std": 25.33,
+        "min": 11,
+        "max": 256
+      }
+    },
+    "train_source2": {
+      "file": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset\\train\\train_source2.tsv",
+      "size_mb": 466.63,
+      "row_count": 5034616,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "missing_values": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 168967,
+        "country": 0
+      },
+      "distinct_countries": [
+        "India",
+        "US"
+      ],
+      "unique_id_count": 5034616,
+      "duplicate_id_count": 0,
+      "duplicate_ids_sample": [],
+      "name_length_stats": {
+        "count": 5034616,
+        "mean": 25.1,
+        "std": 8.89,
+        "min": 2,
+        "max": 104
+      },
+      "address_length_stats": {
+        "count": 5034616,
+        "mean": 46.23,
+        "std": 24.84,
+        "min": 0,
+        "max": 249
+      }
+    },
+    "train_source3": {
+      "file": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset\\train\\train_source3.tsv",
+      "size_mb": 480.37,
+      "row_count": 5285603,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "missing_values": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 175916,
+        "country": 0
+      },
+      "distinct_countries": [
+        "India",
+        "US"
+      ],
+      "unique_id_count": 5285603,
+      "duplicate_id_count": 0,
+      "duplicate_ids_sample": [],
+      "name_length_stats": {
+        "count": 5285603,
+        "mean": 25.2,
+        "std": 9.49,
+        "min": 2,
+        "max": 123
+      },
+      "address_length_stats": {
+        "count": 5285603,
+        "mean": 46.71,
+        "std": 21.65,
+        "min": 0,
+        "max": 240
+      }
+    },
+    "test_source1": {
+      "file": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset\\test\\test_source1.tsv",
+      "size_mb": 166.91,
+      "row_count": 1732544,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "missing_values": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "distinct_countries": [
+        "France",
+        "India",
+        "US"
+      ],
+      "unique_id_count": 1732544,
+      "duplicate_id_count": 0,
+      "duplicate_ids_sample": [],
+      "name_length_stats": {
+        "count": 1732544,
+        "mean": 23.84,
+        "std": 7.67,
+        "min": 3,
+        "max": 92
+      },
+      "address_length_stats": {
+        "count": 1732544,
+        "mean": 57.21,
+        "std": 25.03,
+        "min": 11,
+        "max": 268
+      }
+    },
+    "test_source2": {
+      "file": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset\\test\\test_source2.tsv",
+      "size_mb": 485.86,
+      "row_count": 4887273,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "missing_values": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 129408,
+        "country": 0
+      },
+      "distinct_countries": [
+        "France",
+        "India",
+        "US"
+      ],
+      "unique_id_count": 4887273,
+      "duplicate_id_count": 0,
+      "duplicate_ids_sample": [],
+      "name_length_stats": {
+        "count": 4887273,
+        "mean": 25.7,
+        "std": 9.12,
+        "min": 2,
+        "max": 102
+      },
+      "address_length_stats": {
+        "count": 4887273,
+        "mean": 50.41,
+        "std": 25.35,
+        "min": 0,
+        "max": 269
+      }
+    },
+    "test_source3": {
+      "file": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset\\test\\test_source3.tsv",
+      "size_mb": 482.56,
+      "row_count": 5082316,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "missing_values": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 136098,
+        "country": 0
+      },
+      "distinct_countries": [
+        "France",
+        "India",
+        "US"
+      ],
+      "unique_id_count": 5082316,
+      "duplicate_id_count": 0,
+      "duplicate_ids_sample": [],
+      "name_length_stats": {
+        "count": 5082316,
+        "mean": 25.66,
+        "std": 9.57,
+        "min": 2,
+        "max": 103
+      },
+      "address_length_stats": {
+        "count": 5082316,
+        "mean": 48.74,
+        "std": 22.64,
+        "min": 0,
+        "max": 267
+      }
+    }
+  },
+  "ground_truth": {
+    "file": "D:\\AMAZON DATASET\\6ab10eb3b23ba_student_resource\\student_resource\\dataset\\train\\train_ground_truth.tsv",
+    "size_mb": 121.13,
+    "row_count": 2206821,
+    "columns": [
+      "source1_entity_id",
+      "matched_entity_ids"
+    ],
+    "match_count_distribution": {
+      "0": 123247,
+      "1": 119157,
+      "2": 375212,
+      "3+": 1589205
+    },
+    "max_matches_for_one_s1": 11,
+    "singleton_s1_count": 123247,
+    "proportion_singleton_s1": 0.0558,
+    "total_positive_links": 7638365,
+    "integrity": {
+      "s1_ids_not_in_source1": 0,
+      "s2_ids_not_in_source2": 0,
+      "s3_ids_not_in_source3": 0,
+      "s1_ids_in_matched_column": 0,
+      "passed": true
+    }
+  },
+  "all_distinct_countries": [
+    "France",
+    "India",
+    "US"
+  ]
+}

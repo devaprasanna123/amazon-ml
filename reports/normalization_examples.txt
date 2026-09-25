@@ -1,0 +1,333 @@
+========================================================================
+NORMALIZATION EXAMPLES (from train_source1 sample)
+========================================================================
+
+  entity_id : S1-677061945
+  country   : 'US' -> 'US'
+  orig name : 'Lerner, Preciado and Teixeira Inc.'
+  norm name : 'lerner preciado and teixeira inc'
+  name toks : 'lerner preciado and teixeira inc'
+  orig addr : '338 Oak Street, Pottstown Borough, PA'
+  norm addr : '338 oak street pottstown borough pa'
+  addr toks : '338 oak street pottstown borough pa'
+  numerics  : '338'
+  postal    : nan
+
+  entity_id : S1-528145300
+  country   : 'US' -> 'US'
+  orig name : 'Declarex Inc.'
+  norm name : 'declarex inc'
+  name toks : 'declarex inc'
+  orig addr : '2805 Boyce Avenue, Fort Worth, TX'
+  norm addr : '2805 boyce avenue fort worth tx'
+  addr toks : '2805 boyce avenue fort worth tx'
+  numerics  : '2805'
+  postal    : nan
+
+  entity_id : S1-477162050
+  country   : 'India' -> 'India'
+  orig name : 'BZC Foundation Ltd'
+  norm name : 'bzc foundation ltd'
+  name toks : 'bzc foundation ltd'
+  orig addr : 'S Y No 33/3, Somwarpet, Kodagu, Karnataka'
+  norm addr : 'south y no 33 3 somwarpet kodagu karnataka'
+  addr toks : 'south 33 somwarpet kodagu karnataka'
+  numerics  : '33 3'
+  postal    : nan
+
+  entity_id : S1-136705690
+  country   : 'US' -> 'US'
+  orig name : 'Continental Shanghai Inc.'
+  norm name : 'continental shanghai inc'
+  name toks : 'continental shanghai inc'
+  orig addr : '920 I Street, Unit 614, Washington, DC'
+  norm addr : '920 i street unit 614 washington dc'
+  addr toks : '920 street unit 614 washington dc'
+  numerics  : '920 614'
+  postal    : nan
+
+  entity_id : S1-688146797
+  country   : 'India' -> 'India'
+  orig name : 'Oxford Infracon Pvt. Ltd.'
+  norm name : 'oxford infracon pvt ltd'
+  name toks : 'oxford infracon pvt ltd'
+  orig addr : '7Th Crs Bhagath Sing Road Jayanagara, Hassan, Karnataka, Hassan, Karnataka'
+  norm addr : '7th crs bhagath sing road jayanagara hassan karnataka hassan karnataka'
+  addr toks : '7th crs bhagath sing road jayanagara hassan karnataka hassan'
+  numerics  : ''
+  postal    : nan
+
+  entity_id : S1-797002870
+  country   : 'India' -> 'India'
+  orig name : 'Technologies Hope Holidays Pvt. Ltd.'
+  norm name : 'technologies hope holidays pvt ltd'
+  name toks : 'technologies hope holidays pvt ltd'
+  orig addr : '262/263 M.G. Road Lashkar Police Station, Pune, Maharashtra, Pune'
+  norm addr : '262 263 m g road lashkar police station pune maharashtra pune'
+  addr toks : '262 263 road lashkar police station pune maharashtra pune'
+  numerics  : '262 263'
+  postal    : nan
+
+  entity_id : S1-577250550
+  country   : 'India' -> 'India'
+  orig name : 'Pixels Public School'
+  norm name : 'pixels public school'
+  name toks : 'pixels public school'
+  orig addr : '92/110, Nehru Place, New Delhi, South Delhi, Delhi'
+  norm addr : '92 110 nehru place new delhi south delhi delhi'
+  addr toks : '92 110 nehru place new delhi south delhi delhi'
+  numerics  : '92 110'
+  postal    : nan
+
+  entity_id : S1-657598238
+  country   : 'US' -> 'US'
+  orig name : 'Blomgren Securities L.L.C.'
+  norm name : 'blomgren securities llc'
+  name toks : 'blomgren securities llc'
+  orig addr : '2993 Getwell Road, TN, Memphis'
+  norm addr : '2993 getwell road tn memphis'
+  addr toks : '2993 getwell road tn memphis'
+  numerics  : '2993'
+  postal    : nan
+
+  entity_id : S1-578590810
+  country   : 'US' -> 'US'
+  orig name : 'Urgent Care Precision Group'
+  norm name : 'urgent care precision group'
+  name toks : 'urgent care precision group'
+  orig addr : '13775 193rd Street, Town Of Eagle Point, WI'
+  norm addr : '13775 193rd street town of eagle point wi'
+  addr toks : '13775 193rd street town eagle point wi'
+  numerics  : '13775'
+  postal    : '13775'
+
+  entity_id : S1-636549603
+  country   : 'US' -> 'US'
+  orig name : 'Family Physicians Inc'
+  norm name : 'family physicians inc'
+  name toks : 'family physicians inc'
+  orig addr : '1024 31st Avenue, Bellwood, IL'
+  norm addr : '1024 31st avenue bellwood il'
+  addr toks : '1024 31st avenue bellwood il'
+  numerics  : '1024'
+  postal    : nan
+
+  entity_id : S1-949793542
+  country   : 'India' -> 'India'
+  orig name : 'STJ Holdings Ltd'
+  norm name : 'stj holdings ltd'
+  name toks : 'stj holdings ltd'
+  orig addr : 'No.23/G-2, Kamakoti Nagar, 3Rd Cross Street, Pallikarani, Tambaram, Kanchipuram,'
+  norm addr : 'no23 g 2 kamakoti nagar 3rd cross street pallikarani tambaram kanchipuram tamil '
+  addr toks : 'no23 kamakoti nagar cross street pallikarani tambaram kanchi'
+  numerics  : '23 2'
+  postal    : nan
+
+  entity_id : S1-255687648
+  country   : 'US' -> 'US'
+  orig name : 'Meon LLC'
+  norm name : 'meon llc'
+  name toks : 'meon llc'
+  orig addr : '1815 Fixler Road, Sharon Township, OH'
+  norm addr : '1815 fixler road sharon township oh'
+  addr toks : '1815 fixler road sharon township oh'
+  numerics  : '1815'
+  postal    : nan
+
+  entity_id : S1-176478926
+  country   : 'India' -> 'India'
+  orig name : 'Future Shivam Solutions Private Limited'
+  norm name : 'future shivam solutions pvt ltd'
+  name toks : 'future shivam solutions pvt ltd'
+  orig addr : '7/453/3, Kochunny Memorial Building Kuttanellur P.O., Thrissur, Kerala'
+  norm addr : '7 453 3 kochunny memorial building kuttanellur p o thrissur kerala'
+  addr toks : '453 kochunny memorial building kuttanellur thrissur kerala'
+  numerics  : '7 453 3'
+  postal    : nan
+
+  entity_id : S1-696974171
+  country   : 'US' -> 'US'
+  orig name : 'Crystal Platinum Token Inc'
+  norm name : 'crystal platinum token inc'
+  name toks : 'crystal platinum token inc'
+  orig addr : '105 1st Street, Marion, IL'
+  norm addr : '105 1st street marion il'
+  addr toks : '105 street marion il'
+  numerics  : '105'
+  postal    : nan
+
+  entity_id : S1-820114606
+  country   : 'India' -> 'India'
+  orig name : 'Mazel Products (India) Private Limited'
+  norm name : 'mazel products india pvt ltd'
+  name toks : 'mazel products india pvt ltd'
+  orig addr : 'Door No:04/448 Near Jamia Islamia Arts&Science College, Karakkunnu, Trikkalangod'
+  norm addr : 'door no 04 448 near jamia islamia arts science college karakkunnu trikkalangode '
+  addr toks : 'door 04 448 jamia islamia arts science college karakkunnu tr'
+  numerics  : '04 448'
+  postal    : nan
+
+  entity_id : S1-766015940
+  country   : 'US' -> 'US'
+  orig name : 'Sterling Pioneer Bold Inc'
+  norm name : 'sterling pioneer bold inc'
+  name toks : 'sterling pioneer bold inc'
+  orig addr : '2002 19th Street, Parkersburg, WV'
+  norm addr : '2002 19th street parkersburg wv'
+  addr toks : '2002 19th street parkersburg wv'
+  numerics  : '2002'
+  postal    : nan
+
+  entity_id : S1-667406578
+  country   : 'US' -> 'US'
+  orig name : 'Miles and Wright'
+  norm name : 'miles and wright'
+  name toks : 'miles and wright'
+  orig addr : '28 County Road 5100, Cleveland, TX'
+  norm addr : '28 county road 5100 cleveland tx'
+  addr toks : '28 county road 5100 cleveland tx'
+  numerics  : '28 5100'
+  postal    : nan
+
+  entity_id : S1-928330106
+  country   : 'US' -> 'US'
+  orig name : 'Capital Creative California'
+  norm name : 'capital creative california'
+  name toks : 'capital creative california'
+  orig addr : '20637 68, Robertsdale, AL'
+  norm addr : '20637 68 robertsdale al'
+  addr toks : '20637 68 robertsdale al'
+  numerics  : '20637 68'
+  postal    : '20637'
+
+  entity_id : S1-664895287
+  country   : 'US' -> 'US'
+  orig name : 'Bright Learning Company Corp'
+  norm name : 'bright learning co corp'
+  name toks : 'bright learning co corp'
+  orig addr : '48 Garden Boulevard, Oyster Bay, NY'
+  norm addr : '48 garden boulevard oyster bay ny'
+  addr toks : '48 garden boulevard oyster bay ny'
+  numerics  : '48'
+  postal    : nan
+
+  entity_id : S1-300632746
+  country   : 'India' -> 'India'
+  orig name : 'Crime Brothers Private Limited'
+  norm name : 'crime brothers pvt ltd'
+  name toks : 'crime brothers pvt ltd'
+  orig addr : '603, En, 6Th Floor, Parshwanath Esquare, Corporate Road, Near Prahalad Nagar Gar'
+  norm addr : '603 en 6th floor parshwanath esquare corporate road near prahalad nagar gard guj'
+  addr toks : '603 en 6th floor parshwanath esquare corporate road prahalad'
+  numerics  : '603'
+  postal    : nan
+
+  entity_id : S1-77585849
+  country   : 'India' -> 'India'
+  orig name : 'Hari Estate Limited'
+  norm name : 'hari estate ltd'
+  name toks : 'hari estate ltd'
+  orig addr : 'Uttar Pradesh, Kannauj, Chhibramau, 1/193 Mohalla- Sharafan'
+  norm addr : 'uttar pradesh kannauj chhibramau 1 193 mohalla sharafan'
+  addr toks : 'uttar pradesh kannauj chhibramau 193 mohalla sharafan'
+  numerics  : '1 193'
+  postal    : nan
+
+  entity_id : S1-880453398
+  country   : 'India' -> 'India'
+  orig name : 'North Marketing Private Limited'
+  norm name : 'north marketing pvt ltd'
+  name toks : 'north marketing pvt ltd'
+  orig addr : 'Syska House, Office No. S-5, 5Th Floor, S. No.2 Sakorenagar, New Airport Road, N'
+  norm addr : 'syska house office no south 5 5th floor south no2 sakorenagar new airport road n'
+  addr toks : 'syska house office south 5th floor south no2 sakorenagar new'
+  numerics  : '5 2'
+  postal    : nan
+
+  entity_id : S1-384585623
+  country   : 'US' -> 'US'
+  orig name : 'Schexnayder Preparatory Academy'
+  norm name : 'schexnayder preparatory academy'
+  name toks : 'schexnayder preparatory academy'
+  orig addr : '1061 High Street, Dedham, MA'
+  norm addr : '1061 high street dedham ma'
+  addr toks : '1061 high street dedham ma'
+  numerics  : '1061'
+  postal    : nan
+
+  entity_id : S1-111101994
+  country   : 'US' -> 'US'
+  orig name : 'Primary Care Health of University Park'
+  norm name : 'primary care health of university park'
+  name toks : 'primary care health of university park'
+  orig addr : '905 Park Street, University Park, IA'
+  norm addr : '905 park street university park ia'
+  addr toks : '905 park street university park ia'
+  numerics  : '905'
+  postal    : nan
+
+  entity_id : S1-153727830
+  country   : 'India' -> 'India'
+  orig name : 'New Delhi Chem Private Limited'
+  norm name : 'new delhi chem pvt ltd'
+  name toks : 'new delhi chem pvt ltd'
+  orig addr : 'Ap -6 Shalimar Bagh, New Delhi, North Delhi, Delhi'
+  norm addr : 'ap 6 shalimar bagh new delhi north delhi delhi'
+  addr toks : 'ap shalimar bagh new delhi north delhi delhi'
+  numerics  : '6'
+  postal    : nan
+
+  entity_id : S1-222768762
+  country   : 'US' -> 'US'
+  orig name : 'Eye Partners of Indianapolis LLC'
+  norm name : 'eye partners of indianapolis llc'
+  name toks : 'eye partners of indianapolis llc'
+  orig addr : '4817 Cross Creek Lane, Unit APT F, Indianapolis, IN'
+  norm addr : '4817 cross creek lane unit apartment f indianapolis in'
+  addr toks : '4817 cross creek lane unit apartment indianapolis'
+  numerics  : '4817'
+  postal    : nan
+
+  entity_id : S1-34717806
+  country   : 'US' -> 'US'
+  orig name : 'Lopez and Farmer Corporation'
+  norm name : 'lopez and farmer corp'
+  name toks : 'lopez and farmer corp'
+  orig addr : '16 Gebung Road, Alfred, ME'
+  norm addr : '16 gebung road alfred me'
+  addr toks : '16 gebung road alfred me'
+  numerics  : '16'
+  postal    : nan
+
+  entity_id : S1-444032495
+  country   : 'India' -> 'India'
+  orig name : 'MC Al Private Limited'
+  norm name : 'mc al pvt ltd'
+  name toks : 'mc al pvt ltd'
+  orig addr : 'Lunawat Court 1206 B/22Shivajinagar, Pune, Maharashtra'
+  norm addr : 'lunawat court 1206 b 22shivajinagar pune maharashtra'
+  addr toks : 'lunawat court 1206 22shivajinagar pune maharashtra'
+  numerics  : '1206'
+  postal    : nan
+
+  entity_id : S1-733101088
+  country   : 'India' -> 'India'
+  orig name : 'Elixir Marketing Private Limited'
+  norm name : 'elixir marketing pvt ltd'
+  name toks : 'elixir marketing pvt ltd'
+  orig addr : 'Shop No. 8, Vikash Shopping Center, Near Circuit House, Mahendranagar, Morbi, Ra'
+  norm addr : 'shop no 8 vikash shopping center near circuit house mahendranagar morbi rajkot g'
+  addr toks : 'shop vikash shopping center circuit house mahendranagar morb'
+  numerics  : '8'
+  postal    : nan
+
+  entity_id : S1-141115011
+  country   : 'India' -> 'India'
+  orig name : 'Aakrati College'
+  norm name : 'aakrati college'
+  name toks : 'aakrati college'
+  orig addr : '15/373, Makkar Sweets Gali Bhagat Singh Colony, Barnala Road, Sirsa, Haryana'
+  norm addr : '15 373 makkar sweets gali bhagat singh colony barnala road sirsa haryana'
+  addr toks : '15 373 makkar sweets gali bhagat singh colony barnala road s'
+  numerics  : '15 373'
+  postal    : nan

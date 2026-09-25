@@ -1,0 +1,26 @@
+{
+  "total_s1": 2206821,
+  "train_s1": 1875797,
+  "val_s1": 331024,
+  "val_fraction_actual": 0.15,
+  "train_total_positive_links": 6491983,
+  "val_total_positive_links": 1146382,
+  "train_singleton_count": 104760,
+  "val_singleton_count": 18487,
+  "train_singleton_pct": 5.58,
+  "val_singleton_pct": 5.58,
+  "train_distribution": {
+    "0": 104760,
+    "1": 101283,
+    "2-3": 770145,
+    "4+": 899609
+  },
+  "val_distribution": {
+    "0": 18487,
+    "1": 17874,
+    "2-3": 135908,
+    "4+": 158755
+  },
+  "leakage_check": "PASSED",
+  "created_at": "2026-09-25T13:26:26"
+}

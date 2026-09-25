@@ -1,0 +1,8 @@
+experiment_id,timestamp,description,candidate_recall,precision,recall,macro_f05,singleton_accuracy,false_merges,avg_predicted_matches,max_predicted_matches,candidate_count,p50_candidates,p95_candidates,runtime_s,peak_ram_mb
+V1,2026-09-25 19:24:52,Task 14 Evaluation: V1 on 5k deterministic test-like validation pool,0.5333,0.795,0.5253,0.721,0.862,40,0.92,11,132450,14.0,60.0,390.37,778.8
+V2,2026-09-25 19:24:52,Task 14 Evaluation: V2 on 5k deterministic test-like validation pool,0.5245,0.795,0.5166,0.7177,0.862,40,0.92,11,180578,45.0,60.0,390.37,778.8
+V3,2026-09-25 19:24:52,Task 14 Evaluation: V3 on 5k deterministic test-like validation pool,0.5474,0.795,0.5392,0.7261,0.862,40,0.92,11,123620,14.0,60.0,390.37,778.8
+V4,2026-09-25 19:24:52,Task 14 Evaluation: V4 on 5k deterministic test-like validation pool,0.5727,0.795,0.5641,0.7348,0.862,40,0.92,11,167958,14.0,120.0,390.39,778.8
+V5,2026-09-25 19:24:52,Task 14 Evaluation: V5 on 5k deterministic test-like validation pool,0.5454,0.795,0.5372,0.7254,0.862,40,0.92,11,134031,14.0,60.0,390.41,778.8
+V6,2026-09-25 19:24:52,Task 14 Evaluation: V6 on 5k deterministic test-like validation pool,0.6006,0.812,0.5916,0.7557,0.885,33,1.15,11,284514,56.0,120.0,390.54,778.8
+V1_Uncalibrated_Production,2026-09-25 19:24:52,Task 14 Evaluation: V1_Uncalibrated_Production on 5k deterministic test-like validation pool,0.5333,0.723,0.5253,0.6712,0.3767,182,2.45,60,132450,14.0,60.0,390.37,778.8
